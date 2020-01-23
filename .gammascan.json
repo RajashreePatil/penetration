@@ -1,0 +1,67 @@
+{
+    "gammaAccess": {
+        "url": "",
+        "userName": "",
+        "password": ""
+    },
+    "repositories": [
+        {
+            "dataDir": "",
+            "repository": {
+                "uid": "4f42195d7f85bbd0bcb49037140ca668",
+                "projectName": "penetration-remotescan-Teamcity",
+                "languages": [
+                    "PYTHON"
+                ],
+                "sources": {
+                    "baseDir": "",
+                    "exclusions": [
+                        "_init_.py",
+                        "test"
+                    ]
+                }
+            },
+            "settings": {
+                "additionalOptions": [],
+                "includePaths": []
+            },
+            "modules": {
+                "codeissues": [
+                    {
+                        "name": "pylint",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
